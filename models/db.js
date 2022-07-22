@@ -1,7 +1,7 @@
 
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb://127.0.0.1:27017/userAndTeam', { useNewUrlparser: true }, (err) => {
+mongoose.connect('mongodb+srv://nikita:assg@cluster0.zswia.mongodb.net/joins-assg?retryWrites=true&w=majority', { useNewUrlparser: true }, (err) => {
     if (!err) {
         console.log('Mongo Connection Successful.');
     } else {

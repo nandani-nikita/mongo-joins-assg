@@ -26,7 +26,7 @@ const allDetails = async (req, res) => {
                 }
             }
 
-        ])
+        ]);
         return res.status(200).json(resp)
     } catch (error) {
         console.log(error);
