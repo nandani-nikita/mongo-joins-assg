@@ -29,7 +29,7 @@ const Home = () => {
         data ?
           <TableData data={data} />
           :
-          <span>No data to display</span>
+          <span> &larr; Click Me To Get Team-User Table</span>
       }
     </main>
   )
