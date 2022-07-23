@@ -10,9 +10,7 @@ const Home = () => {
     try {
       // let response = (await axios.post('http://localhost:8080/user/get-details')).data;
       let response = (await axios.post('https://team-user-list.herokuapp.com/user/get-details')).data;
-      console.log(response);
-      console.log(response.length);
-      console.log(typeof (response));
+      // console.log(response);
       setData(response)
 
     } catch (error) {
