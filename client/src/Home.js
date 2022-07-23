@@ -8,7 +8,8 @@ const Home = () => {
   var [error, setError] = useState(false);
   async function getData() {
     try {
-      let response = (await axios.post('http://localhost:8080/user/get-details')).data;
+      // let response = (await axios.post('http://localhost:8080/user/get-details')).data;
+      let response = (await axios.post('https://algorithammer.herokuapp.com/user/get-details')).data;
       console.log(response);
       console.log(response.length);
       console.log(typeof (response));
